@@ -1,0 +1,41 @@
+.popup {
+  background-color: var(--tt-bg-color);
+
+  :global(.popover-body) {
+    color: var(--tt-font-color);
+  }
+
+  &[x-placement^="bottom"] div:first-child::after {
+    border-bottom-color: var(--tt-bg-color);
+  }
+
+  &[x-placement^="top"] div:first-child::after {
+    border-top-color: var(--tt-bg-color);
+  }
+
+  &[x-placement^="left"] div:first-child::after {
+    border-left-color: var(--tt-bg-color);
+  }
+
+  &[x-placement^="right"] div:first-child::after {
+    border-right-color: var(--tt-bg-color);
+  }
+}
+
+.icon {
+  background-color: transparent;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 20px;
+  min-height: 20px;
+  display: inline-block;
+
+  &.question {
+    background-image: url(../assets/icon-help.svg);
+  }
+  &.info {
+    background-image: url(../assets/icon-info.svg);
+  }
+}

@@ -1,0 +1,76 @@
+.notifications {
+  position: fixed;
+  right: 3vh;
+  top: 3vh;
+  z-index: 99999;
+}
+
+.notification {
+  width: 300px;
+  min-height: 60px;
+  border-radius: 5px;
+  margin: 2%;
+  display: flex;
+  padding-left: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  align-items: center;
+}
+.success {
+  background: url("../assets/icon-green-circle-check.svg") no-repeat left center;
+  background-position: 16px center;
+  background-color: #d4f1e0;
+}
+.error,
+.danger {
+  background: url("../assets/icon-red-circle-error.svg") no-repeat left center;
+  background-position: 16px center;
+  background-color: #ffdee1;
+}
+.warning {
+  background: url("../assets/icon-yellow-circle-warning.svg") no-repeat left
+    center;
+  background-position: 16px center;
+  background-color: #fbefc9;
+}
+.info {
+  background: url("../assets/icon-blue-circle-info.svg") no-repeat left center;
+  background-position: 16px center;
+  background-color: #d2e5f9;
+}
+
+.close {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+  }
+}
+
+:global(.notification-enter) {
+  transform: translateX(300px);
+}
+
+:global(.notification-enter.notification-enter-active) {
+  transform: translateX(0);
+  transition: transform 300ms ease-in;
+}
+
+:global(.notification-exit) {
+  transform: translateX(0);
+}
+
+:global(.notification-exit.notification-exit-active) {
+  transform: translateX(300px);
+  transition: transform 300ms ease-in;
+}

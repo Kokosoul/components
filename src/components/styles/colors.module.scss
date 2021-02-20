@@ -1,0 +1,29 @@
+// Named colors
+
+// Brand Primary colors
+$azure: #1c7ee3;
+$prussianBlue: #0c2c4d;
+$teal: #2bc2bd; // aka Max Blue Green
+$fieryRose: #ff5c68;
+
+//  colors
+$skyBlue: #97beed;
+$blackCoral: #44586f;
+$midBlueGreen: #9ce3df;
+$salmon: #fe9ba5;
+$lightTeal: #cdf4f3;
+$lightGreen: #bdfaba;
+$yellowGreen: #e6fa9a;
+$lightGray: #e0e2e3;
+
+:export {
+  primaryTeal: $teal;
+  primaryBlue: $azure;
+  primaryDarkBlue: $prussianBlue;
+  primaryRed: $fieryRose;
+
+  secondaryTeal: $midBlueGreen;
+  secondaryBlue: $skyBlue;
+  secondaryDarkBlue: $blackCoral;
+  secondaryRed: $salmon;
+}
